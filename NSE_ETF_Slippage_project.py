@@ -92,11 +92,12 @@ def fetch_and_plot_stocks(symbols, days=DAYS):
             print(f"[ERROR] Could not fetch data for {sym}: {e}")
 
 # Asking User for Price Trend Graph
-ask2=input("\nWould you like to get Today's Stock recommedation y\\n")
+ask2=input("\nWould you like to see Price Trend Visualiaztion Analysis  y\\n")
 if(ask2=='y'):
     if __name__ == "__main__":
         DAYS=input("How Many days of price trend would you like to see ?")
         print("Starting to fetch and display 30-day stock price trends...\n")
         fetch_and_plot_stocks(official_symbol, DAYS)
         print("\nAll available stock graphs displayed successfully.")
+
 
